@@ -1,0 +1,123 @@
+/* アイデア投稿.css */
+
+/* ナビゲーションバー */
+.navbar {
+    height: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: top 0.3s;
+  }
+  
+  .navbar.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-brand img {
+    height: 40px;
+    margin-top: 5px;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 10px;
+    line-height: 40px;
+  }
+  
+  /* 追加のスタイル */
+  .small-button {
+    display: inline-block;
+    padding: 3px;
+    margin: 0 5px;
+    font-size: 10px;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    user-select: none;
+  }
+  
+  .small-button.active {
+    background-color: #00ff00;
+    border-color: #4cae4c;
+  }
+  
+  .small-button:not(.active) {
+    background-color: #b8b8b8;
+    border-color: #4f4f4f;
+  }
+  
+  .text-container {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 5px;
+    vertical-align: middle;
+  }
+  
+  .text-container input[type="text"] {
+    padding: 6px 12px;
+    height: 34px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  }
+  
+  .section-container {
+    margin-bottom: 20px;
+  }
+  
+  .section-heading {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .section-content {
+    margin-left: 20px;
+  }
+  
+  .toggle-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  .toggle-button {
+    display: inline-block;
+    padding: 3px;
+    font-size: 10px;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    user-select: none;
+  }
+  
+  .toggle-button.show {
+    background-color: #00ff00;
+    border-color: #4cae4c;
+  }
+  
+  .toggle-button.hide {
+    background-color: #b8b8b8;
+    border-color: #4f4f4f;
+  }
+  
+  .toggle-text {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  

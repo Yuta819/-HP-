@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ビジネスアイデア共有プラットフォーム投稿ページ</title>
+  <link rel="stylesheet" href="css/アイデア投稿.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  
+
+</head>
+
+<body style="background: linear-gradient(to bottom right, #b5d3e7, #d6b5e7, #e7b5c1, #e7c6b5);">
+  <!-- ナビゲーションバー -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="img/sitelog2.png" alt="アイデア就活"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">投稿</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">投稿一覧</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">学習機能</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">✉</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">👤</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">🔔</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              MENU
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">機能1</a></li>
+              <li><a class="dropdown-item" href="#">機能2</a></li>
+              <li><a class="dropdown-item" href="#">機能3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  
+
+  <!-- メインコンテンツ -->
+  <div class="container">
+
+    <!-- ボタンとテキストボックス -->
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex align-items-center mb-3">
+          <div class="small-button active"></div>
+          <div class="text-container">アイデア</div>
+          <div class="small-button"></div>
+          <div class="text-container">エピソード</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-container">
+      <div class="row">
+        <div class="col-6">
+          <div class="section-heading">①サービス概要</div>
+        </div>
+        <div class="col-6 text-end">
+          <div class="toggle-buttons">
+            <span class="toggle-button show"></span>
+            <span class="toggle-text">公開</span>
+            <span class="toggle-button hide"></span>
+            <span class="toggle-text">非公開</span>
+          </div>
+        </div>
+      </div>
+      <div class="section-content">
+        <textarea class="form-control" rows="4" placeholder="サービス概要"></textarea>
+      </div>
+    </div>
+
+    <div class="section-container">
+      <div class="row">
+        <div class="col-6">
+          <div class="section-heading">②解決する課題</div>
+        </div>
+        <div class="col-6 text-end">
+          <div class="toggle-buttons">
+            <span class="toggle-button show"></span>
+            <span class="toggle-text">公開</span>
+            <span class="toggle-button hide"></span>
+            <span class="toggle-text">非公開</span>
+          </div>
+        </div>
+      </div>
+      <div class="section-content">
+        <textarea class="form-control" rows="4" placeholder="解決する課題"></textarea>
+      </div>
+    </div>
+
+    <div class="section-container">
+      <div class="row">
+        <div class="col-6">
+          <div class="section-heading">③ターゲット層</div>
+        </div>
+        <div class="col-6 text-end">
+          <div class="toggle-buttons">
+            <span class="toggle-button show"></span>
+            <span class="toggle-text">公開</span>
+            <span class="toggle-button hide"></span>
+            <span class="toggle-text">非公開</span>
+          </div>
+        </div>
+      </div>
+      <div class="section-content">
+        <textarea class="form-control" rows="4" placeholder="ターゲット層"></textarea>
+      </div>
+    </div>
+
+    <div class="section-container">
+      <div class="row">
+        <div class="col-6">
+          <div class="section-heading">④アイデアの目的＆目標</div>
+        </div>
+        <div class="col-6 text-end">
+          <div class="toggle-buttons">
+            <span class="toggle-button show"></span>
+            <span class="toggle-text">公開</span>
+            <span class="toggle-button hide"></span>
+            <span class="toggle-text">非公開</span>
+          </div>
+        </div>
+      </div>
+      <div class="section-content">
+        <textarea class="form-control" rows="4" placeholder="アイデアの目的＆目標"></textarea>
+      </div>
+    </div>
+
+    <div class="section-container">
+      <div class="row">
+        <div class="col-6">
+          <div class="section-heading">⑤提供する価値</div>
+        </div>
+        <div class="col-6 text-end">
+          <div class="toggle-buttons">
+            <span class="toggle-button show"></span>
+            <span class="toggle-text">公開</span>
+            <span class="toggle-button hide"></span>
+            <span class="toggle-text">非公開</span>
+          </div>
+        </div>
+      </div>
+      <div class="section-content">
+        <textarea class="form-control" rows="4" placeholder="提供する価値"></textarea>
+      </div>
+    </div>
+
+    <div class="section-container">
+      <div class="row">
+        <div class="col-6">
+          <div class="section-heading">⑥類似サービスとの差別化</div>
+        </div>
+        <div class="col-6 text-end">
+          <div class="toggle-buttons">
+            <span class="toggle-button show"></span>
+            <span class="toggle-text">公開</span>
+            <span class="toggle-button hide"></span>
+            <span class="toggle-text">非公開</span>
+          </div>
+        </div>
+      </div>
+      <div class="section-content">
+        <textarea class="form-control" rows="4" placeholder="類似サービスとの差別化"></textarea>
+      </div>
+    </div>
+
+    <div class="section-container">
+      <div class="row">
+        <div class="col-6">
+          <div class="section-heading">⑦発想のきっかけ</div>
+        </div>
+        <div class="col-6 text-end">
+          <div class="toggle-buttons">
+            <span class="toggle-button show"></span>
+            <span class="toggle-text">公開</span>
+            <span class="toggle-button hide"></span>
+            <span class="toggle-text">非公開</span>
+          </div>
+        </div>
+      </div>
+      <div class="section-content">
+        <textarea class="form-control" rows="4" placeholder="発想のきっかけ"></textarea>
+      </div>
+    </div>
+
+    <div class="section-container">
+      <div class="row">
+        <div class="col-6">
+          <div class="section-heading">
+            <input class="form-control" type="text" placeholder="自由項目">
+          </div>
+        </div>
+        <div class="col-6 text-end">
+          <div class="toggle-buttons">
+            <span class="toggle-button show"></span>
+            <span class="toggle-text">公開</span>
+            <span class="toggle-button hide"></span>
+            <span class="toggle-text">非公開</span>
+          </div>
+        </div>
+      </div>
+      <div class="section-content">
+        <textarea class="form-control" rows="4" placeholder="自由項目の詳細"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ナビゲーションバーの追従
+    window.addEventListener('scroll', function() {
+      var navbar = document.querySelector('.navbar');
+      navbar.classList.toggle('fixed-top', window.scrollY > 0);
+    });
+
+    // ボタンの切り替えとテキストボックスの表示/非表示の制御
+    var buttons = document.querySelectorAll('.small-button');
+    var textInput1 = document.querySelector('input[placeholder="アイデア"]');
+    var textInput2 = document.querySelector('input[placeholder="エピソード"]');
+
+    buttons.forEach(function(button, index) {
+      button.addEventListener('click', function() {
+        buttons.forEach(function(btn) {
+          btn.classList.remove('active');
+        });
+        button.classList.add('active');
+        if (index === 0) {
+          textInput1.disabled = false;
+          textInput2.disabled = true;
+        } else {
+          textInput1.disabled = true;
+          textInput2.disabled = false;
+        }
+      });
+    });
+
+    // 各項目ごとのボタンの切り替えとテキストボックスの表示/非表示の制御
+    var sectionContainers = document.querySelectorAll('.section-container');
+
+    sectionContainers.forEach(function(container) {
+      var buttons = container.querySelectorAll('.toggle-button');
+      var textArea = container.querySelector('textarea');
+
+      buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+          buttons.forEach(function(btn) {
+            btn.classList.remove('show');
+            btn.classList.add('hide');
+            btn.nextElementSibling.classList.remove('show');
+            btn.nextElementSibling.classList.add('hide');
+          });
+          button.classList.remove('hide');
+          button.classList.add('show');
+          button.nextElementSibling.classList.remove('hide');
+          button.nextElementSibling.classList.add('show');
+
+          if (button.classList.contains('hide')) {
+            textArea.disabled = true;
+            textArea.classList.add('disabled-textarea');
+          } else {
+            textArea.disabled = false;
+            textArea.classList.remove('disabled-textarea');
+          }
+        });
+      });
+    });
+  </script>
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

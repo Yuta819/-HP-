@@ -1,0 +1,65 @@
+/* 学生側.css */
+
+.body {
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+}
+
+/* ナビゲーションバー */
+.navbar {
+  height: 60px; /* 縦幅を指定 */
+  padding-top: 5px; /* 上部の余白を追加 */
+  padding-bottom: 5px; /* 下部の余白を追加 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* 必要に応じてz-indexの値を調整してください */
+}
+
+/* ナビゲーションバーのロゴ */
+.navbar-brand img {
+  height: 40px; /* ロゴ画像の高さを調整 */
+  margin-top: 5px; /* ロゴ画像の上部マージンを調整 */
+}
+
+/* ナビゲーションバーのリンク */
+.navbar-nav .nav-link {
+  padding: 10px; /* ナビゲーションバーのリンクの余白を追加 */
+  line-height: 40px; /* ナビゲーションバーのリンクの縦方向の中央揃えを設定 */
+}
+
+/* グラフ */
+#chartContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#accessChart,
+#graph2,
+#graph3,
+#graph4 {
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+/* メインコンテンツ */
+.container {
+  margin-top: 0px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+
+p {
+  font-size: 18px;
+  color: #555;
+}
+
+
+
+
